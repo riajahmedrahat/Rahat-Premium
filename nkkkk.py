@@ -1300,7 +1300,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrSM MEGHLA-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https:https://github.com/riajahmedrahat/rahat-approval.txt/blob/main/rahat-approval.txt").text
+	r1=requests.get("https:hhttps://github.com/riajahmedrahat/rahat-approval.txt.git").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
