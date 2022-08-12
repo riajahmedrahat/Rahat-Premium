@@ -89,7 +89,7 @@ imt="-2.0=="
 ak="shakil-"
 myid=uuid.uuid4().hex[:10].upper()
 try:
-	key1 = open"(https://github.com/riajahmedrahat/Rahat-Premium/blob/main/Approval.txt").read()
+	key1 = open"("/data/data/com.termux/files/home/Rahat-Premium/premium.py",).read()
 except:
 	kok=open("https://github.com/riajahmedrahat/Rahat-Premium/blob/main/Approval.txt")
 	kok.write(myid+imt)
